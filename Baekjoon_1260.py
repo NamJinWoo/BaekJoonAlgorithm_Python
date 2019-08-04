@@ -12,7 +12,7 @@ class Node:
         self.children.append(newNode)
 
 
-firstNumber = firstLine.split(" ")[2]
+firstNumber = firstLine.split(" ")[0]
 firstNode = Node(firstNumber)
 
 for i in range(int(firstLine.split(" ")[1])):
@@ -23,4 +23,6 @@ for i in range(int(firstLine.split(" ")[1])):
         else:
             firstNode.add_child(int(line.split(" ")[0]))
 
-print(firstNode.children)
+# print(firstNode.children)
+matrix = [[0]*(int(firstNumber)+1) for _ in range(int(firstNumber)+1)]
+print(matrix)
