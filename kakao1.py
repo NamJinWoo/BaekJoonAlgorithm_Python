@@ -29,11 +29,8 @@ def solution(s):
 
         # 여기서 저장
         result_array.append(len(result_string))
-        print(result_string)
         gap_size += 1
     result_array.append(len(s))
     answer = min(result_array)
-    print(result_array)
-    print(answer)
 
 solution("abcabcdede")

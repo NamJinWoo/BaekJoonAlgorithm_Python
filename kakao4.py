@@ -18,5 +18,5 @@ def solution(words, queries):
         answer.append(count)
     print(answer)
 
-
+# fnmatch.filter 를 사용하면 쉬운 문제.
 solution(["frodo", "front", "frost", "frozen", "frame", "kakao"], ["fro??", "????o", "fr???", "fro???", "pro?"])
