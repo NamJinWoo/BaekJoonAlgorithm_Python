@@ -48,4 +48,5 @@ for k in range(K, N+1):
             result.append(math.sqrt(var))
 
 
-print(round(min(result),11))
+print("{0:.11f}".format(min(result)))
+# test case 가 뭔지 몰라서 뭐가 틀렸는지 모르겠음.
