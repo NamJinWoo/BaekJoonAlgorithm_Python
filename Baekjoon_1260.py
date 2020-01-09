@@ -1,28 +1,50 @@
-firstLine = input()
+from collections import deque
 
 
-class Node:
-    children = []
+def dfs(graphDict, start_node):
+    visit = list()
+    stack = [start_node]
+    while stack:
+        node = stack.pop()
+        if node not in visit:
+            visit.append(node)
+            if node in graph:
+                tempList = list(set(graphDict[node]) - set(visit))
+                tempList.sort(reverse=True)
+                stack.extend(tempList)
+    return " ".join(str(i) for i in visit)
 
-    def __init__(self, number):
-        self.number = number
 
-    def add_child(self, child):
-        newNode = Node(child)
-        self.children.append(newNode)
+def bfs(graphDict, start_node):
+    visit = list()
+    queue = deque([start_node])
+    while queue:
+        node = queue.popleft()
+        if node not in visit:
+            visit.append(node)
+            if node in graph:
+                tempList = list(set(graphDict[node]) - set(visit))
+                tempList.sort()
+                queue.extend(tempList)
+
+    return " ".join(str(i) for i in visit)
 
 
-firstNumber = firstLine.split(" ")[0]
-firstNode = Node(firstNumber)
+graph = dict()
+firstLine = input().split(' ')
+nodeCount, lineCount, startNode = [int(i) for i in firstLine]
+for i in range(lineCount):
+    line = input().split(' ')
+    n1, n2 = [int(j) for j in line]
+    if n1 not in graph:
+        graph[n1] = [n2]
+    elif n2 not in graph[n1]:
+        graph[n1].append(n2)
 
-for i in range(int(firstLine.split(" ")[1])):
-    line = input()
-    if firstNumber in line.split(" "):
-        if firstNumber == line.split(" ")[0]:
-            firstNode.add_child(int(line.split(" ")[1]))
-        else:
-            firstNode.add_child(int(line.split(" ")[0]))
+    if n2 not in graph:
+        graph[n2] = [n1]
+    elif n1 not in graph[n2]:
+        graph[n2].append(n1)
 
-# print(firstNode.children)
-matrix = [[0]*(int(firstNumber)+1) for _ in range(int(firstNumber)+1)]
-print(matrix)
+print(dfs(graph, startNode))
+print(bfs(graph, startNode))

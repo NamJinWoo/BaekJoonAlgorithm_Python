@@ -1,10 +1,12 @@
-array = [0,1,2,3,4,5]
+import statistics
 
-print(array[5])
+arr = [3,1,5]
 
-multiline = """hi
-hello
-"""
+print(statistics.median(arr))
+print(statistics.median_high(arr))
+print(statistics.median_low(arr))
 
-print(multiline)
-print("""Hello my name is {name}""".format(name="jinwoo"))
+arr2 = [3,1,5,7]
+print(statistics.median(arr2))
+print(statistics.median_high(arr2))
+print(statistics.median_low(arr2))
