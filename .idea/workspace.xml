@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3e127a9-0e66-42c5-9625-c75d9bde68fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kakao_findway.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -129,10 +128,10 @@
         <option value="$PROJECT_DIR$/Baekjoon_1654.py" />
         <option value="$PROJECT_DIR$/Baekjoon_18242.py" />
         <option value="$PROJECT_DIR$/thatsong.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/kakao_traffic.py" />
         <option value="$PROJECT_DIR$/kakao_shuttle.py" />
         <option value="$PROJECT_DIR$/kakao_findway.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -181,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kakao_findway">
+  <component name="RunManager" selected="Python.test">
     <configuration name="kakao_findway" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,11 +288,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.kakao_findway" />
         <item itemvalue="Python.kakao_shuttle" />
         <item itemvalue="Python.kakao_traffic" />
         <item itemvalue="Python.thatsong" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -321,9 +320,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="956" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20433997" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20433997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -331,7 +329,7 @@
       <window_info id="Job Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38425925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38425925" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39699075" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -733,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="28" />
         </state>
       </provider>
     </entry>
